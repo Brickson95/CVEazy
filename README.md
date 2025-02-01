@@ -70,7 +70,7 @@ git clone https://github.com/Brickson95/Discord_CVE_Updater.git
 
 #### Windows Users:
 
-1. Install Python if you haven’t already: Download Python
+1. Install Python if you haven’t already: [Download Python](https://www.python.org/downloads/)
 
 2. Open Command Prompt (Win + R → type cmd → hit Enter)
 
@@ -102,4 +102,25 @@ pip3 install -r requirements.txt
 ```
 python3 bot.py
 ```
+## ☁️ Step 5: Run It 24/7 (Free Cloud Hosting)
 
+If you don’t want to keep your computer on all the time, you can run this bot for free on Replit!
+
+#### Run on Replit (Easy & Free)
+
+1. Go to [Replit](https://replit.com/) and create an account.
+
+2. Click "Create Repl", choose Python, and create a new project.
+
+3. Copy and paste the bot’s bot.py code into Replit.
+
+4. Click "Files" (left menu), create a new file called config.json, and add:
+```
+{
+  "token": "YOUR_BOT_TOKEN_HERE",
+  "user_id": "YOUR_DISCORD_USER_ID"
+}
+```
+5. Click "Run" and your bot will start!
+
+6. (Optional) Use [UptimeRobot](https://uptimerobot.com/) to keep it running 24/7.
