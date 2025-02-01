@@ -22,9 +22,9 @@ This bot will send you messages on Discord whenever a new CVE (Common Vulnerabil
 
 # Setup
 
-##🔧 Step 1: Get the Bot Code
+## 🔧 Step 1: Get the Bot Code
 
-Go to GitHub: [https://github.com/Brickson95/Discord_CVE_Updater]
+Go to GitHub: https://github.com/Brickson95/Discord_CVE_Updater
 
 Click the green "Code" button.
 
