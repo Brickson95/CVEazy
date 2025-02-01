@@ -20,13 +20,15 @@ This bot will send you messages on Discord whenever a new CVE (Common Vulnerabil
 
 * A Discord account
 
-## Setup
+# Setup
 
-1. Install Python 3.8+.
+##🔧 Step 1: Get the Bot Code
 
-2. Clone this repository:
-git clone https://github.com/yourusername/CVE-Discord-Bot.git cd CVE-Discord-Bot
+Go to GitHub: [INSERT LINK TO REPO]
 
-3. Install dependencies:
-pip install -r requirements.txt
+Click the green "Code" button.
+
+Select "Download ZIP" and unzip the folder on your computer.
+
+If you have Git installed, you can run this command instead:
 
