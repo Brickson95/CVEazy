@@ -31,5 +31,6 @@ Click the green "Code" button.
 Select "Download ZIP" and unzip the folder on your computer.
 
 If you have Git installed, you can run this command instead:
+
 `git clone https://github.com/Brickson95/Discord_CVE_Updater.git`
 
