@@ -68,7 +68,7 @@ git clone https://github.com/Brickson95/Discord_CVE_Updater.git
 
 ## 🏃 Step 4: Run the Bot (Locally)
 
-#### Windows Users:
+### Windows Users:
 
 1. Install Python if you haven’t already: [Download Python](https://www.python.org/downloads/)
 
@@ -86,7 +86,7 @@ pip install -r requirements.txt
 ```
 python bot.py
 ```
-#### Mac/Linux Users:
+### Mac/Linux Users:
 
 1. Open Terminal.
 
@@ -106,7 +106,7 @@ python3 bot.py
 
 If you don’t want to keep your computer on all the time, you can run this bot for free on Replit!
 
-#### Run on Replit (Easy & Free)
+### Run on Replit (Easy & Free)
 
 1. Go to [Replit](https://replit.com/) and create an account.
 
@@ -127,7 +127,7 @@ If you don’t want to keep your computer on all the time, you can run this bot 
 
 ## 🛠️ Troubleshooting
 
-#### "Bot is running, but I don’t get messages!"
+### "Bot is running, but I don’t get messages!"
 
 * Check that you entered the correct user ID in config.json.
 
