@@ -24,14 +24,29 @@ This bot will send you messages on Discord whenever a new CVE (Common Vulnerabil
 
 ## 🔧 Step 1: Get the Bot Code
 
-Go to GitHub: https://github.com/Brickson95/Discord_CVE_Updater
+1. Go to GitHub: https://github.com/Brickson95/Discord_CVE_Updater
 
-Click the green "Code" button.
+2. Click the green "Code" button.
 
-Select "Download ZIP" and unzip the folder on your computer.
+3. Select "Download ZIP" and unzip the folder on your computer.
+
+OR
 
 If you have Git installed, you can run this command instead:
 ```
 git clone https://github.com/Brickson95/Discord_CVE_Updater.git
 ```
 
+## ⚙️ Step 2: Create a Discord Bot
+
+1. Go to the [Discord Developer Portal](https://discord.com/developers/applications)
+
+2. Click "New Application" → Give it a name (e.g., "CVE Bot")
+
+3. Go to "Bot" (left side menu) → Click "Add Bot"
+
+4. Click "Reset Token" and copy the token (Keep it safe!)
+
+5. Under "Privileged Gateway Intents," turn on "Message Content Intent"
+
+6. Save your bot token for the next step!
