@@ -65,3 +65,41 @@ git clone https://github.com/Brickson95/Discord_CVE_Updater.git
 3. Replace YOUR_BOT_TOKEN_HERE with your actual bot token.
 
 4. Replace YOUR_DISCORD_USER_ID with your Discord ID (find it by enabling Developer Mode and right-clicking your name → "Copy ID").
+
+## 🏃 Step 4: Run the Bot (Locally)
+
+#### Windows Users:
+
+1. Install Python if you haven’t already: Download Python
+
+2. Open Command Prompt (Win + R → type cmd → hit Enter)
+
+3. Navigate to the bot folder:
+```
+cd path/to/Discord_CVE_Updater
+```
+4. Install required dependencies:
+```
+pip install -r requirements.txt
+```
+5. Start the bot:
+```
+python bot.py
+```
+#### Mac/Linux Users:
+
+1. Open Terminal.
+
+2. Navigate to the bot folder:
+```
+cd path/to/Discord_CVE_Updater
+```
+4. Install required dependencies:
+```
+pip3 install -r requirements.txt
+```
+5. Start the bot:
+```
+python3 bot.py
+```
+
