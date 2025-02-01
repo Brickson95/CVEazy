@@ -50,3 +50,18 @@ git clone https://github.com/Brickson95/Discord_CVE_Updater.git
 5. Under "Privileged Gateway Intents," turn on "Message Content Intent"
 
 6. Save your bot token for the next step!
+
+## 📁 Step 3: Set Up the Bot
+
+1. Inside the downloaded bot folder, create a new file called config.json
+
+2. Open config.json and paste this:
+```
+{
+  "token": "YOUR_BOT_TOKEN_HERE",
+  "user_id": "YOUR_DISCORD_USER_ID"
+}
+```
+3. Replace YOUR_BOT_TOKEN_HERE with your actual bot token.
+
+4. Replace YOUR_DISCORD_USER_ID with your Discord ID (find it by enabling Developer Mode and right-clicking your name → "Copy ID").
