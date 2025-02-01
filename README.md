@@ -12,6 +12,14 @@ This bot will send you messages on Discord whenever a new CVE (Common Vulnerabil
 
 ✅ Works 24/7 so you never miss an alert
 
+# 🛠️ What You Need
+
+* A computer (Windows, Mac, or Linux) OR a free cloud service (like Replit)
+
+* Python installed (if running locally)
+
+* A Discord account
+
 ## Setup
 
 1. Install Python 3.8+.
