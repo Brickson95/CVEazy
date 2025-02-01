@@ -124,3 +124,19 @@ If you don’t want to keep your computer on all the time, you can run this bot 
 5. Click "Run" and your bot will start!
 
 6. (Optional) Use [UptimeRobot](https://uptimerobot.com/) to keep it running 24/7.
+
+## 🛠️ Troubleshooting
+
+#### "Bot is running, but I don’t get messages!"
+
+* Check that you entered the correct user ID in config.json.
+
+* Make sure your bot is online in the Discord Developer Portal.
+
+* Ensure you enabled "Message Content Intent" in the bot settings.
+
+### "Bot closes when I shut down my computer!"
+
+* Use Replit or a cloud server if you want it online 24/7.
+
+* If running locally, use screen (Linux/Mac) or Task Scheduler (Windows).
