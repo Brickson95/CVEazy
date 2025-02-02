@@ -2,6 +2,9 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyc
+*.pyo
+*.pyd
 
 # C extensions
 *.so
@@ -169,3 +172,11 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore token/config files
+config.json
+token.txt
