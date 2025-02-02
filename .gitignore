@@ -179,4 +179,5 @@ Thumbs.db
 
 # Ignore token/config files
 config.json
+tokens.json
 token.txt
