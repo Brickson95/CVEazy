@@ -53,9 +53,9 @@ git clone https://github.com/Brickson95/Discord_CVE_Updater.git
 
 ## 📁 Step 3: Set Up the Bot
 
-1. Inside the downloaded bot folder, create a new file called config.json
+1. Inside the downloaded bot folder, find the config.json file.
 
-2. Open config.json and paste this:
+2. Open config.json and you'll see this:
 ```
 {
   "token": "YOUR_BOT_TOKEN_HERE",
@@ -64,7 +64,7 @@ git clone https://github.com/Brickson95/Discord_CVE_Updater.git
 ```
 3. Replace YOUR_BOT_TOKEN_HERE with your actual bot token.
 
-4. Replace YOUR_DISCORD_USER_ID with your Discord ID (find it by enabling Developer Mode and right-clicking your name → "Copy ID").
+4. Replace YOUR_DISCORD_USER_ID with your Discord ID (find it by enabling Developer Mode and clicking your name → "Copy ID").
 
 ## 🏃 Step 4: Run the Bot (Locally)
 
