@@ -106,6 +106,22 @@ class CVEazy:
             references_urls = [ref['url'] for ref in references] if references else []
             references_text = '\n'.join(references_urls) if references_urls else 'No references available'
 
+            base_message = f"""
+🚨 **{alert_type}**
+
+**ID:** {cve_id}
+**Published Date:** {published_date}
+**References:**
+{references_text}
+
+Stay vigilant! 🔒
+"""
+            
+            max_description_length = 2000 - len(base_message)
+
+            if len(description) > max_description_length:
+                description = description[:max_description_length - 3] + "..."
+
             message = f"""
 🚨 **{alert_type}**
 
