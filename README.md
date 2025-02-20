@@ -1,6 +1,6 @@
 # Discord_CVE_Updater
 
-Hey there! Want to get CVE alerts directly in your Discord inbox? Follow these super easy steps to set up your very own bot. No complicated tech talk – just simple instructions!
+Hey there! Want to get CVE alerts directly in your Discord inbox? Follow these super easy steps to set up your very own bot.
 
 # 🚀 What This Bot Does
 
@@ -14,7 +14,7 @@ This bot will send you messages on Discord whenever a new CVE (Common Vulnerabil
 
 # 🛠️ What You Need
 
-* A computer (Windows, Mac, or Linux) OR a free cloud service (like Replit)
+* A computer (Windows, Mac, or Linux)
 
 * Python installed (if running locally)
 
@@ -24,7 +24,7 @@ This bot will send you messages on Discord whenever a new CVE (Common Vulnerabil
 
 ## 🔧 Step 1: Get the Bot Code
 
-1. Go to GitHub: https://github.com/Brickson95/Discord_CVE_Updater
+1. Go to GitHub: https://github.com/Brickson95/CVEazy
 
 2. Click the green "Code" button.
 
@@ -34,37 +34,58 @@ OR
 
 If you have Git installed, you can run this command instead:
 ```
-git clone https://github.com/Brickson95/Discord_CVE_Updater.git
+git clone https://github.com/Brickson95/CVEazy.git
 ```
 
 ## ⚙️ Step 2: Create a Discord Bot
 
-1. Go to the [Discord Developer Portal](https://discord.com/developers/applications)
+1. Create a new server on Discord you'd like to add the bot too. The bot won't post anything on the server, so you can also add it to any server, as long as you have manage server permissions
 
-2. Click "New Application" → Give it a name (e.g., "CVE Bot")
+2. Go to the [Discord Developer Portal](https://discord.com/developers/applications)
 
-3. Go to "Bot" (left side menu) → Click "Add Bot"
+3. Click "New Application" → Give it a name (e.g., "CVE Bot")
 
-4. Click "Reset Token" and copy the token (Keep it safe!)
+4. Go to the "Bot" tab (left side menu)
 
-5. Under "Privileged Gateway Intents," turn on "Message Content Intent"
+5. Click "Reset Token" and copy the token (Keep it safe!)
 
-6. Save your bot token for the next step!
+6. Navigate to the "OAuth2" tab (left side menu)
+
+7. In the "SCOPES" section of the "OAuth2 URL Generator" select the "bot" checkbox
+
+8. Then, in the "Bot Permissions" section select the "Send Messages", "Embed Links", and "Attach Files" checkboxes
+
+9. After selecting the appropriate boxes, copy the URL from the bottom of the "OAuth2 URL Generator", open a new tab, and paste the URL into the address bar
+
+10. When the URL loads you will be greeted with a page to authorize your bot to use the permissions you granted it on the previous page
+  
+11. Select the server you'd like to add the bot too, and then click "Continue"
+
+12. You should now see your bot as a member of your server
+
+13. Save your bot token for the next step!
 
 ## 📁 Step 3: Set Up the Bot
 
-1. Inside the downloaded bot folder, find the config.json file.
+1. Navigate to the [NVD developer portal](https://nvd.nist.gov/developers/request-an-api-key) and request an API key for personal use
 
-2. Open config.json and you'll see this:
+2. Once you recieve the API key, keep it safe
+
+3. Inside the downloaded bot folder, find the config.json file.
+
+4. Open config.json and you'll see this:
 ```
 {
-  "token": "YOUR_BOT_TOKEN_HERE",
-  "user_id": "YOUR_DISCORD_USER_ID"
+  "bot_token": "YOUR_DISCORD_BOT_TOKEN",
+  "user_id": "YOUR_DISCORD_USER_ID",
+  "nvd_api": "YOUR_NVD_API_KEY"
 }
 ```
-3. Replace YOUR_BOT_TOKEN_HERE with your actual bot token.
+5. Replace YOUR_BOT_TOKEN_HERE with your actual bot token from the previous step.
 
-4. Replace YOUR_DISCORD_USER_ID with your Discord ID (find it by enabling Developer Mode and clicking your name → "Copy ID").
+6. Replace YOUR_DISCORD_USER_ID with your Discord ID (find it by enabling Developer Mode and clicking your name → "Copy ID").
+
+7. Replace YOUR_NVD_API_KEY with the API key you got earlier in this step.
 
 ## 🏃 Step 4: Run the Bot (Locally)
 
@@ -76,7 +97,7 @@ git clone https://github.com/Brickson95/Discord_CVE_Updater.git
 
 3. Navigate to the bot folder:
 ```
-cd path/to/Discord_CVE_Updater
+cd path/to/CVEazy
 ```
 4. Install required dependencies:
 ```
@@ -84,7 +105,7 @@ pip install -r requirements.txt
 ```
 5. Start the bot:
 ```
-python bot.py
+python CVEazy_main.py
 ```
 ### Mac/Linux Users:
 
@@ -92,7 +113,7 @@ python bot.py
 
 2. Navigate to the bot folder:
 ```
-cd path/to/Discord_CVE_Updater
+cd path/to/CVEazy
 ```
 4. Install required dependencies:
 ```
@@ -100,30 +121,8 @@ pip3 install -r requirements.txt
 ```
 5. Start the bot:
 ```
-python3 bot.py
+python3 CVEazy_main.py
 ```
-## ☁️ Step 5: Run It 24/7 (Free Cloud Hosting)
-
-If you don’t want to keep your computer on all the time, you can run this bot for free on Replit!
-
-### Run on Replit (Easy & Free)
-
-1. Go to [Replit](https://replit.com/) and create an account.
-
-2. Click "Create Repl", choose Python, and create a new project.
-
-3. Copy and paste the bot’s bot.py code into Replit.
-
-4. Click "Files" (left menu), create a new file called config.json, and add:
-```
-{
-  "token": "YOUR_BOT_TOKEN_HERE",
-  "user_id": "YOUR_DISCORD_USER_ID"
-}
-```
-5. Click "Run" and your bot will start!
-
-6. (Optional) Use [UptimeRobot](https://uptimerobot.com/) to keep it running 24/7.
 
 ## 🛠️ Troubleshooting
 
@@ -133,10 +132,8 @@ If you don’t want to keep your computer on all the time, you can run this bot 
 
 * Make sure your bot is online in the Discord Developer Portal.
 
-* Ensure you enabled "Message Content Intent" in the bot settings.
+* Ensure your bot was actually added to your server, and its a server you own and have manage server permissions for.
 
 ### "Bot closes when I shut down my computer!"
 
-* Use Replit or a cloud server if you want it online 24/7.
-
-* If running locally, use screen (Linux/Mac) or Task Scheduler (Windows).
+* You will need to use a cloud server or a hosting service if you want it online 24/7.
