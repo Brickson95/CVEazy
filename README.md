@@ -1,10 +1,10 @@
-# Discord_CVE_Updater
+# CVEazy
 
 Hey there! Want to get CVE alerts directly in your Discord inbox? Follow these super easy steps to set up your very own bot.
 
 # 🚀 What This Bot Does
 
-This bot will send you messages on Discord whenever a new CVE (Common Vulnerabilities and Exposures) is published. That way, you stay up to date with the latest security threats!
+This bot will send you messages on Discord whenever a new CVE (Common Vulnerabilities and Exposures) is published. The messages contain the ID, description, date published, and any important references. That way, you stay up to date with the latest security threats! 
 
 ✅ Open-source and free
 
